@@ -1,5 +1,5 @@
-import runGameEngine from '..';
-import { getRandom, cons } from '../utils';
+import runGameEngine from '../index.js';
+import { getRandom, cons } from '../utils.js';
 
 export const isEven = (number) => number % 2 === 0;
 

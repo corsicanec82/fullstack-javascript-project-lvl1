@@ -6,7 +6,7 @@ jobs:
   test:
     strategy:
       matrix:
-        nodes: [12.x, '>=13.x']
+        nodes: ['>=14.x']
 
     name: test/node ${{ matrix.nodes }}
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: ${{ matrix.nodes }}
       - run: make install
-      - run: make test
+      - run: make tests
       - run: node -v
 
   # coverage:

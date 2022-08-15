@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { car, cdr } from './utils';
+import { car, cdr } from './utils.js';
 
 const numberOfQuestions = 3;
 
